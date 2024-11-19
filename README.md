@@ -241,3 +241,57 @@ Dá pra gerenciar o ambiente de nuvem e seus recursos, por exemplo, por:
 #### Exploração lab - Criando máquinas virtuais
 
 Cada uma das estratégias que você adotar, vai influenciar na porcentagem do SLA
+
+---
+### Tipos de serviço de nuvem
+
+- Tipos de serviço de nuvem
+	- IaaS, PaaS e SaaS
+
+- Objetivos:
+	- Descrever IaaS, PaaS e IaaS
+	- Descrever o modelo de responsabilidade compartilhada
+	- Identificar os casos de uso apropriados para cada serviço de nuvem (IaaS, PaaS e SaaS)
+
+##### IaaS - (Infraestrutura como serviço)
+*Normalmente o mais comum, no contexto de serviço em nuvem*
+
+![[Pasted image 20241119003808.png]]
+
+- Crie uma infraestrutura de TI de pagamento conforme o uso alugando servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais de um provedor de nuvem.
+
+##### PaaS - (Plataforma como serviço)
+
+
+- Fornece um ambiente para a criação, o teste e a implantação de aplicativos de software, sem foca no gerenciamento da infraestrutura subjacente.
+
+##### SaaS - (Software como serviço)
+
+
+- Os usuários se conectam e usam aplicativos com base em nuvem pela internet: por exemplo, Microsoft Office 365, email e calendários.
+
+Quanto mais você vai subindo, menos responsabilidade você tem
+
+---
+#### Modelo de responsabilidade compartilhada
+
+No local = nosso datacenter físico = responsabilidade toda nossa.
+
+###### Comparação dos tipos de serviço
+
+- IaaS 
+	- O serviço de nuvem mais flexível
+		- Porque você que personaliza/é responsável a maior parte das coisas
+	- Você configura e gerencia o hardware para seu aplicativo
+
+- PaaS
+	- Focado no desenvolvimento de aplicativo, banco de dados, entre outros.
+	- O gerenciamento de plataforma é realizado pelo provedor de nuvem.
+
+- SaaS
+	- Modelo de preço de pagamento conforme o uso.
+	- Os usuários pagam pelo software que utilizam em um modelo de assinatura.
+
+---
+
+
