@@ -1,9 +1,3 @@
-# resumo-do-lab1
-Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO
-
----
-Notas:
-
 
 ### Introdução aos Conceitos Básicos do Microsoft Azure
 
@@ -29,6 +23,8 @@ Acesse, faça o laboratório e depois exclua.
 
 - O que é a computação em nuvem?
 	- A computação em nuvem é o fornecimento de serviços de computação pela Internet, habilitando inovações mais rápidos, recursos flexíveis e economias de escala.
+	
+	- Ele é um ambiente virtualizado
 	
 	- Basicamente são os serviços de uso de data-centers virtualizados, oferecidos por bigtechs
 
@@ -143,3 +139,105 @@ Tem bastante ferramentas que auxiliam você a ver os custos.
 Tudo que está em "versão prévia" pode ou não sumir. Ou seja, não tem garantia, ou SLA - *(Service Level Agreement)*
 
 ---
+### Benefícios da computação em nuvem
+
+- Descrever os benefícios da alta disponibilidade, confiabilidade, previsibilidade, segurança, governança e capacidade de gerenciamento da nuvem.
+
+###### **Alta disponibilidade**
+
+- Eles vão te dar uma garantia de um certo tempo de disponibilidade do serviço .
+
+- SLA = Contrato de quanto tempo ele pode ficar indisponível ou disponível. 
+	- Normalmente acordam uma porcentagem de 99%, 99.9% e 99.95% de disponibilidade. 
+	- Se tiver menos do que o acordado no SLA, o provedor, no caso, a Microsoft, vai devolver uma certa quantia do valor, proporcional ao quanto de indisponibilidade ele teve de diferença em relação ao acordado no SLA.
+
+- Um modelo de 99% de disponibilidade pode ficar indisponível por 1.68 horas por semana ou até 7.2 horas por mês, por exemplo.
+
+A alta disponibilidade se concentra em garantir a disponibilidade máxima, independente de interrupções ou eventos que possam ocorrer.
+
+###### **Escalabilidade**
+
+- A escalabilidade refere-se à capacidade de ajustar recursos para atender à demanda.
+- A capacidade de escalar significa que você poderá adicionar mais recursos para lidar melhor com o aumento da demanda.
+
+- O outro benefício da escalabilidade é que você não está pagando além do necessário pelos serviços.
+- Como a nuvem é um modelo baseado em consumo, você paga apenas pelo que usa.
+- Se a demanda cair, você poderá reduzir seus recursos e, assim, reduzir seus custos.
+
+- Com a escala vertical, se você estivesse desenvolvendo um aplicativo e precisasse de mais capacidade de processamento, poderia escalar verticalmente para adicionar mais CPUs ou RAM à máquina virtual.
+
+###### **Escalabilidade**
+
+- Com a elasticidade, se você experimentasse um salto repentino acentuado na demanda, seus recursos implantados poderiam ser expandidos (automaticamente ou manualmente).
+
+- Ex: Black Friday
+	- Imagina você precisar aguentar um monte de gente entrando de uma vez no site, mas não saber se vai precisar de tudo aquilo. 
+
+- Por exemplo, você pode adicionar máquinas virtuais ou contêineres por meio da expansão.
+- Da mesma forma, se houver uma queda significativa na demanda, os recursos implantados poderão ser reduzidos horizontalmente.
+
+Resumidamente, se precisarmos de mais, pode aumentar automaticamente e se precisarmos de menos, pode diminuir automaticamente.
+
+###### **Confiabilidade**
+
+- Devido ao design descentralizado, a nuvem naturalmente dá suporte a uma infraestrutura confiável e resiliente
+- Com um design descentralizado, a nuvem permite que você tenha recursos implantados em várias regiões do mundo.
+
+- Basicamente, se der pau, dá pra consertar bem fácil. 
+
+- Com essa escala global, mesmo que ocorra um evento catastrófico em uma região, as outras regiões ainda estarão em funcionamento.
+
+###### **Confiabilidade**
+
+- A previsibilidade na nuvem permite que você avance com confiança, seja do desempenho ou no custo. Ambas são influenciadas pelo Microsoft Azure Well-Architected Framework
+
+###### **Segurança**
+
+- A nuvem oferece ferramentas de segurança que atendem às necessidades dos clientes mas, é importante lembrar que a implementação de muitas delas devem ser realizadas pelo cliente.
+
+- Segurança, não é responsabilidade do provedor. Não totalmente.
+
+- Se você quiser o controle máximo da segurança, a infraestrutura como serviço fornecerá recursos físicos, mas permitirá que você gerencie os sistemas operacionais e o software instalado, incluindo aplicações de patches e manutenção.
+
+- Se você quiser que a aplicação de patches e a manutenção sejam tratadas automaticamente, as implantações de plataforma como serviço ou software como serviço podem ser as melhores estratégias de nuvem para você.
+
+- Você que teria que atualizar uma máquina, por exemplo.
+
+A Microsoft disponibiliza os serviços, e a gente aplica.
+
+###### **Governança**
+*Basicamente, a galera da papelada.*
+
+Como vamos gerir nossos padrões e recursos.
+
+- A auditoria baseada em nuvem ajuda a sinalizar qualquer recurso que esteja fora de conformidade com seus padrões corporativos e fornecem estratégias de mitigação.
+
+- Dependendo do seu modelo operacional, patches de software e atualizações também podem ser aplicados automaticamente, o que ajuda na governança e na segurança.
+
+- Padrões de gestão na nuvem
+
+- Ao estabelecer uma presença de governança o mais cedo possível você poderá manter sua presença de nuvem atualizada, protegida e bem gerenciada.
+
+###### **Gerenciabilidade**
+
+- Um dos principais benefícios da computação em nuvem são as opções de capacidade de gerenciamento. Há dois tipos de capacidade de gerenciamento para computação em nuvem que você aprenderá nesta série e ambos trazem excelentes benefícios.
+
+- Podemos criar recursos na nuvem de várias formas.
+
+- Um dos principais benefícios da computação em nuvem são as opções de capacidade de gerenciamento. Há dois tipos de capacidade de gerenciamento para computação em nuvem que você aprenderá nesta série e ambos trazem excelentes benefícios.
+
+O gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem. Por exemplo:
+- Escalar automaticamente a implantação de recursos com base na necessidade.
+
+- Implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual.
+
+Dá pra gerenciar o ambiente de nuvem e seus recursos, por exemplo, por:
+- Por meio de um portal na Web
+- Usando uma interface de linha de comando
+- Usando APIs
+- Usando o Powershell
+
+---
+#### Exploração lab - Criando máquinas virtuais
+
+Cada uma das estratégias que você adotar, vai influenciar na porcentagem do SLA
